@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="bg-gray-900">
+    <h1 class="flex justify-center text-white pt-5 text-3xl">Basic Calculator</h1>
+    <div class="flex justify-end p-5 bg-gray-800 mt-5 rounded-xl max-w-96 mx-auto">
+        <h1 id="head" class="text-white text-3xl">0</h1>
+    </div>
+    <div class=" flex justify-center bg-gray-800 p-5 mt-5 rounded-xl max-w-96 mx-auto">
+        <div class="grid grid-cols-4 gap-10">
+            <div id="1">
+                <button class="bg-gray-700 text-white p-6 text-3xl rounded-xl hover:blur-none hover:scale-90 active:bg-yellow-200 duration-500" onclick="input_button(1)">1</button>
+            </div>
+            <div id="2">
+                <button class="bg-gray-700 text-white p-6 text-3xl rounded-xl hover:blur-none hover:scale-90 active:bg-yellow-200 duration-500" onclick="input_button(2)">2</button>
+            </div>
+            <div id="3">
+                <button class="bg-gray-700 text-white p-6 text-3xl rounded-xl hover:blur-none hover:scale-90 active:bg-yellow-200 duration-500" onclick="input_button(3)">3</button>
+            </div>
+            <div id="+">
+                <button class="bg-gray-700 text-white px-5 py-6 text-3xl rounded-xl hover:blur-none hover:scale-90 active:bg-yellow-200 duration-500" onclick="input_button('+')">+</button>
+            </div>
+            <div id="4">
+                <button class="bg-gray-700 text-white p-6 text-3xl rounded-xl hover:blur-none hover:scale-90 active:bg-yellow-200 duration-500" onclick="input_button(4)">4</button>
+            </div>
+            <div id="5">
+                <button class="bg-gray-700 text-white p-6 text-3xl rounded-xl hover:blur-none hover:scale-90 active:bg-yellow-200 duration-500" onclick="input_button(5)">5</button>
+            </div>
+            <div id="6">
+                <button class="bg-gray-700 text-white p-6 text-3xl rounded-xl hover:blur-none hover:scale-90 active:bg-yellow-200 duration-500" onclick="input_button(6)">6</button>
+            </div>
+            <div id="-">
+                <button class="bg-gray-700 text-white p-6 text-3xl rounded-xl hover:blur-none hover:scale-90 active:bg-yellow-200 duration-500" onclick="input_button('-')">-</button>
+            </div>
+            <div id="7">
+                <button class="bg-gray-700 text-white p-6 text-3xl rounded-xl hover:blur-none hover:scale-90 active:bg-yellow-200 duration-500" onclick="input_button(7)">7</button>
+            </div>
+            <div id="8">
+                <button class="bg-gray-700 text-white p-6 text-3xl rounded-xl hover:blur-none hover:scale-90 active:bg-yellow-200 duration-500" onclick="input_button(8)">8</button>
+            </div>
+            <div id="9">
+                <button class="bg-gray-700 text-white p-6 text-3xl rounded-xl hover:blur-none hover:scale-90 active:bg-yellow-200 duration-500" onclick="input_button(9)">9</button>
+            </div>
+            <div id="*">
+                <button class="bg-gray-700 text-white p-6 text-3xl rounded-xl hover:blur-none hover:scale-90 active:bg-yellow-200 duration-500" onclick="input_button('*')">x</button>
+            </div>
+            <div id="C">
+                <button class="bg-gray-700 text-white p-6 text-3xl rounded-xl hover:blur-none hover:scale-90 active:bg-yellow-200 duration-500" onclick="input_button('c')">C</button>
+            </div>
+            <div id="0">
+                <button class="bg-gray-700 text-white p-6 text-3xl rounded-xl hover:blur-none hover:scale-90 active:bg-yellow-200 duration-500" onclick="input_button(0)">0</button>
+            </div>
+            <div id="=">
+                <button class="bg-gray-700 text-white p-6 text-3xl rounded-xl hover:blur-none hover:scale-90 active:bg-yellow-200 duration-500" onclick="calculate()">=</button>
+            </div>
+            <div id="/">
+                <button class="bg-gray-700 text-white p-6 text-3xl rounded-xl hover:blur-none hover:scale-90 active:bg-yellow-200 duration-500" onclick="input_button('/')">/</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
